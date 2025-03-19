@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom CSS for booking.html */
+    body {
+      background-color: #f8f9fa;
+    }
+    .booking-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .booking-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-label {
+      font-weight: 500;
+      color: #555;
+    }
+    .form-control {
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .btn-back {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .btn-back a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-back a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book Your Stay</h2>
+    <form id="bookingForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="checkin" class="form-label">Check-in Date</label>
+        <input type="date" class="form-control" id="checkin" required>
+      </div>
+      <div class="mb-3">
+        <label for="checkout" class="form-label">Check-out Date</label>
+        <input type="date" class="form-control" id="checkout" required>
+      </div>
+      <input type="hidden" id="hotelName" name="hotelName">
+      <input type="hidden" id="hotelPrice" name="hotelPrice">
+      <input type="hidden" id="hotelLocation" name="hotelLocation">
+      <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </form>
+    <div class="btn-back">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
