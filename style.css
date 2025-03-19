@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -32,16 +32,16 @@ body {
   color: #2c2929;
 }
 
-/* <---------------------later --------------> *//
+
 .navbar_html{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.1); /* Transparent white */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
