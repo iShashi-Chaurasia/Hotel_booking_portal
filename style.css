@@ -55,7 +55,16 @@ body {
   backdrop-filter: blur(15px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
 
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
 
 
 /* Hero Section */
